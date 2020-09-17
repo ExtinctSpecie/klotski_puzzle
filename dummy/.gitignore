@@ -1,0 +1,13 @@
+*.iml
+.gradle
+/local.properties
+.idea/*
+.DS_Store
+build/
+/captures
+*.csv
+/app/usages.txt
+/app/seeds.txt
+
+/playground
+/app/newrelic.properties

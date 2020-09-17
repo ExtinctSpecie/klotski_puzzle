@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".presentation.view.MainActivity">
+
+        <TextView
+            android:id="@+id/fastest_route_steps_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/slowest_route_steps_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="@string/fastest_route_steps" />
+
+        <TextView
+            android:id="@+id/slowest_route_steps_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/table_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fastest_route_steps_tv"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="@string/slowest_route_steps" />
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="240dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/slowest_route_steps_tv"
+            app:layout_constraintVertical_chainStyle="packed">
+
+            <TableRow
+                android:id="@+id/row_1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <View
+                    android:id="@+id/row_1_piece_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece1" />
+
+                <View
+                    android:id="@+id/row_1_piece_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece2" />
+
+                <View
+                    android:id="@+id/row_1_piece_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece3" />
+
+                <View
+                    android:id="@+id/row_1_piece_4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece4" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <View
+                    android:id="@+id/row_2_piece_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece4" />
+
+                <View
+                    android:id="@+id/row_2_piece_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece3" />
+
+                <View
+                    android:id="@+id/row_2_piece_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece2" />
+
+                <View
+                    android:id="@+id/row_2_piece_4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece1" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <View
+                    android:id="@+id/row_3_piece_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece1" />
+
+                <View
+                    android:id="@+id/row_3_piece_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece2" />
+
+                <View
+                    android:id="@+id/row_3_piece_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece3" />
+
+                <View
+                    android:id="@+id/row_3_piece_4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece4" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <View
+                    android:id="@+id/row_4_piece_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece4" />
+
+                <View
+                    android:id="@+id/row_4_piece_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece3" />
+
+                <View
+                    android:id="@+id/row_4_piece_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece2" />
+
+                <View
+                    android:id="@+id/row_4_piece_4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece1" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row_5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <View
+                    android:id="@+id/row_5_piece_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece8" />
+
+                <View
+                    android:id="@+id/row_5_piece_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece7" />
+
+                <View
+                    android:id="@+id/row_5_piece_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece6" />
+
+                <View
+                    android:id="@+id/row_5_piece_4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@color/piece5" />
+            </TableRow>
+        </TableLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/table_layout">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/previous_state_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="@string/previous"
+                android:textAllCaps="false" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/display_automatically"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="@string/automatic"
+                android:textAllCaps="false" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/stop_automatically"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="@string/stop"
+                android:textAllCaps="false"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/next_state_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:text="@string/next"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/loading_pb"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,3 @@
+include ':klotski'
+include ':app'
+rootProject.name = "Dummy"
